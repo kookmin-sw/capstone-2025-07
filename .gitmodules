@@ -4,3 +4,6 @@
 [submodule "frontend-web"]
 	path = frontend-web
 	url = https://github.com/Kokodaks/CanvasDrawingWeb.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/Kokodaks/CanvasDrawingBack.git

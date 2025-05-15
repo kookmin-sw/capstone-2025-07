@@ -1,77 +1,58 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/gFPznrUY)
-# Welcome to GitHub
+# Drawing I ✍️ - 미술심리상담 보조 EMR 서비스
 
-캡스톤 팀 생성을 축하합니다.
+## 🧠 소개
+**Drawing I**는 아동의 그림 검사(HTP 검사)를 디지털로 기록하고 분석하여, 미술심리상담사의 업무를 보조하는 EMR(전자 의료기록) 서비스입니다.
 
-## 팀소개 및 페이지를 꾸며주세요.
+아동이 그림을 그리는 **모든 순간**을 기록하고, 그 과정을 분석하여 **상담사가 쉽고 빠르게 리포트를 생성**할 수 있도록 돕습니다.
 
-- 프로젝트 소개
-  - 프로젝트 설치방법 및 데모, 사용방법, 프리뷰등을 readme.md에 작성.
-  - Api나 사용방법등 내용이 많을경우 wiki에 꾸미고 링크 추가.
+---
 
-- 팀페이지 꾸미기
-  - 프로젝트 소개 및 팀원 소개
-  - index.md 예시보고 수정.
+## 🛠️ 주요 기능
 
-- GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
-  - Source를 marster branch
-  - Theme Chooser에서 태마선택
-  - 수정후 팀페이지 확인하여 점검.
+- 🧒 **피검사자 등록**: 웹 Admin 페이지에서 아동 등록 및 검사 코드 발급
+- 🏡 **HTP 그림 검사**: 태블릿 앱에서 '집-나무-사람' 그림 검사 UI 제공
+- 🎥 **검사 과정 분석**: 그리는 과정을 기반으로 AI가 주요 이벤트 자동 분석
+- 📝 **심리 리포트 자동 생성**: 상담 메모를 요약하여 EMR 작성 초안 자동화
+- 🔁 **결과 공유 및 활용**: 타임라인 기반 리포트 확인 및 수정 가능
 
-**팀페이지 주소** -> https://kookmin-sw.github.io/ '{{자신의 리파지토리 아이디}}'
+---
 
-**예시)** 2023년 0조  https://kookmin-sw.github.io/capstone-2023-00/
+## 🧱 시스템 아키텍처
 
+- **Frontend (App)**: Flutter
+- **Frontend (Web)**: React + fabric.js
+- **Backend**: Node.js + Socket.io
+- **AI**: OpenAI GPT API
+- **Cloud**: AWS EC2, S3, KMS, Docker
 
-## 내용에 아래와 같은 내용들을 추가하세요.
+---
 
-### 1. 프로잭트 소개
+## 🧪 사용법
 
-프로젝트
+🔧 현재 개발 진행 중입니다.  
+**정식 배포 이후 사용법을 업데이트할 예정입니다.**
 
-### 2. 소개 영상
+---
 
-프로젝트 소개하는 영상을 추가하세요
+## 👩‍💻 팀 소개
 
-### 3. 팀 소개
+| 이름 | 역할 |
+|------|------|
+| 김설 | PM |
+| 고다연 | 백엔드 |
+| 안세준 | 백엔드 |
+| 오성우 | AI |
+| 이지수 | 프론트엔드 |
+| 정성엽 | 프론트엔드 |
 
-팀을 소개하세요.
+---
 
-팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
+## 📺 소개 영상
+🔗 추후 영상 링크 업로드 예정
 
-### 4. 사용법
+---
 
-소스코드제출시 설치법이나 사용법을 작성하세요.
+## 💡 향후 계획
 
-### 5. 기타
-
-추가적인 내용은 자유롭게 작성하세요.
-
-
-## Markdown을 사용하여 내용꾸미기
-
-Markdown은 작문을 스타일링하기위한 가볍고 사용하기 쉬운 구문입니다. 여기에는 다음을위한 규칙이 포함됩니다.
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-자세한 내용은 [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Support or Contact
-
-readme 파일 생성에 추가적인 도움이 필요하면 [도움말](https://help.github.com/articles/about-readmes/) 이나 [contact support](https://github.com/contact) 을 이용하세요.
+- 메모 자동 요약 정확도 향상
+- 병원 연동 및 실증 테스트

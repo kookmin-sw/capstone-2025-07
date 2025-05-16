@@ -1,103 +1,296 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drawing I</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
-
-    header {
-      background-color: #fff3e0;
-      padding: 2rem 1rem 1rem 1rem;
-      text-align: center;
-      border-bottom: 4px solid #ffe0b2;
-    }
-
-    header img {
-      width: 120px;
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #ff8c42;
-    }
-
-    p.subtitle {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #ff8c42;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .card {
-      background-color: #fff3e0;
-      border: 1px solid #ffd6a5;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #ffe0b2;
-      color: #8d4f00;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="logo.png" alt="로고 이미지" />
-    <h1>Drawing I</h1>
-    <p class="subtitle">캡스톤 프로젝트 2025-07</p>
-  </header>
-
-  <section>
-    <div class="card">
-      <h2>👶 프로젝트 소개</h2>
-      <p>저희는 미술 심리 상담 보조 서비스 Drawing I 를 개발했습니다. 저희 서비스를 통해 상담사가 검사 품질과 업무 효율성면에서 큰 향상을 얻게 하는 것이 저희의 가장 큰 목표입니다. </p>
-    </div>
-
-    <div class="card">
-      <h2>🧑‍💻 팀원 소개</h2>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DrawingI GitHub Pages</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.3/src/app/ci.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
       <ul>
-        <li>김설(팀장) : AI</li>
-        <li>오성우 : AI</li>
-        <li>고다연 : Backend</li>
-        <li>안세준 : Backend</li>
-        <li>이지수 : Frontend</li>
-        <li>정성엽 : Frontend</li>
+        <li><a href="#about">About</a></li>
+        <!-- <li><a href="#tech-stack">Tech Stack</a></li> -->
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#presentation">Presentation</a></li>
+        <li><a href="#poster">Poster</a></li>
+				<li><a href="#demo">Video</a></li>
       </ul>
-    </div>
+    </nav>
+    <main class="main--container">
+      <div class="main--wrapper">
+        <!-- Drawing I 로고 -->
+        <a href="#about" class="site--link">
+          <img
+            class="main--image"
+            src="images/logo.png"
+            alt="DrawingI logo image"
+            style="width: 100%; height: auto; object-fit: contain"
+          />
+        </a>
+        <a href="#about">
+          <i class="fa-solid fa-arrow-down fa-2xl" style="color: #ff914d"></i>
+        </a>
+      </div>
+    </main>
+    <section class="about--section" id="about">
+      <div class="about about--description">
+        <h1>Drawing I는 어떤 서비스인가요?</h1>
+        <h2>
+          Drawing I는 아동의 <strong>HTP 그림검사</strong>를 디지털로 구현하여<br />
+          그리는 과정을 <strong>분석</strong>하고, 상담사의 <strong>보고서 작성</strong>을 도와주는<br />
+          AI 기반 <strong>그림심리검사 보조 EMR</strong> 서비스입니다.
+        </h2>
+      </div>
+      <img
+        class="about description-image"
+        src="images/web_report.png"
+        alt="web_report image"
+      />
+    </section>
+    <section
+      class="about--section"
+      style="background-color: var(--sixth-color)"
+    >
+      <img
+        class="about description-image"
+        src="images/web_main.png"
+        alt="web main page"
+      />
+      <div class="about about--description">
+        <h1>환자 등록하기</h1>
+        <h2>
+          상담사는 웹 Admin 페이지에서 <strong>피검사자 정보</strong>를 등록할 수 있습니다.
+          이름, 성별, 주민등록번호, 주소, 가족력, 의뢰사유 등의 정보를 입력하면
+          해당 아동의 <strong>검사 권한</strong>이 자동으로 생성됩니다.
+        </h2>
+      </div>
+    </section>
+    <section class="about--section" id="drawing">
+      <div class="about about--description" style="flex: 1 1 45%;">
+        <h1>HTP 그림검사 진행</h1>
+        <h2>
+          아동은 태블릿에서 검사를 진행합니다.
+          집 → 나무 → <br />사람 → 사람(다른 성별) 순서로 그림을 그리고 그림을 완료하면 
+          이어서 <strong>그림에 대한 질문</strong>이 주어집니다.<br />
+          아이는 질문에 대해 직접 답을 입력하거나
+          <strong>음성 입력</strong><br />기능을 사용해 말로 대답할 수 있습니다.
+        </h2>
+      </div>
+      <div class="description-image" style="flex: 1 1 50%; display: flex; flex-direction: row; flex-wrap: wrap; gap: 1rem;">
+        <img src="images/pad_house.jpg" alt="집 그리기 인트로" style="width: 31%; border-radius: 12px;" />
+        <img src="images/pad_drawing.jpg" alt="그림판 UI" style="width: 31%; border-radius: 12px;" />
+        <img src="images/pad_qna.jpg" alt="질문 응답 화면" style="width: 31%; border-radius: 12px;" />
+      </div>
+    </section>
+    <section 
+      class="about--section" 
+      style="background-color: var(--sixth-color)"
+      >
+      <img
+        class="about description-image"
+        src="images/web_timeline.png"
+        alt="타임라인 뷰어 화면"
+      />
+      <div class="about about--description">
+        <h1>검사 과정 분석</h1>
+        <h3>① 타임라인 기반 검사 흐름 확인</h3>
+        <h2>
+          <strong>타임라인 뷰어</strong>를 통해 전체 검사 영상이 시간 흐름에 따라 구성됩니다.
+          상담사는 원하는 시점에 <strong>메모를 추가</strong>하거나<br />
+          <strong>시간을 클릭하여 해당 시점의 영상</strong>으로 바로 이동할 수 있습니다.
+          이는 <strong>검사 흐름의 맥락 파악</strong>과 상담 기록 작성에 효과적입니다.
+        </h2>
+      </div>
+    </section>
+    <section class="about--section" id="about">
+      <div class="about about--description">
+        <h1>검사 과정 분석</h1>
+        <h3>② 행동 이벤트 기반 리컨스트럭션</h3>
+        <h2>
+          시스템은 검사 과정 중 <strong>의미 있는 행동</strong>을 자동으로 탐지합니다.
+          <strong>선 굵기 변화</strong>, <strong>지우고 다시 그린 영역</strong>,<br />
+          <strong>빠르게 그린 부위</strong>, <strong>반복된 그림</strong> 등은
+          클릭 시 해당 시점의<br /><strong>획(stroke) 정보로 재현</strong>됩니다.
+          이는 아동의 행동에 담긴 심리적 의미를 직관적으로 분석할 수 있게 합니다.
+        </h2>
+      </div>
+      <img
+        class="about description-image"
+        src="images/web_htp.png"
+        alt="web_report image"
+      />
+    </section>
+    <section
+      class="about--section"
+      style="background-color: var(--sixth-color)"
+    >
+      <img
+        class="about description-image"
+        src="images/web_report.png"
+        alt="web report image"
+      />
+      <div class="about about--description">
+        <h1>리포트 초안 자동 생성</h1>
+        <h2>
+          검사 결과는 <strong>GPT 기반으로 요약</strong>되며, 아이가 직접<br />
+          입력한 <strong>질문 응답</strong>과 상담사가 남긴 <strong>메모</strong>도 자동 반영<br />됩니다.
+          또한, 최종 그림에서 <strong>객체(집, 나무, 사람 등)가<br />검출</strong>되어
+          <strong>HTP 보고서 양식</strong>에 항목별로 입력됩니다.<br />
+          결과 리포트는 상담사가 자유롭게 가공 후 병원
+          EMR 시스템에 저장하여 활용할 수 있습니다.
+        </h2>
+      </div>
+    </section>
 
-    <div class="card">
-      <h2>📱 주요 기능</h2>
-      <ul>
-        <li>그림 검사 과정을 사용하기 편하게 가공해주는 기능</li>
-        <li>분석 결과를 영상과 함께 타임라인 형태로 시각화 시켜서 상담사에게 제공</li>
-        <li>타임라인은 하이퍼링크같은 인터랙션 요소처럼 동작하여, 상담사가 즉시 보고싶은 시점으로 이동</li>
-        <li>검사 보고서 작성 자동화 지원</li>
-      </ul>
-    </div>
-  </section>
+    <section class="architecture-section" id="architecture">
+      <h1>Architecture</h1>
+      <div class="architecture-image-wrapper">
+        <img
+          class="architecture-image"
+          src="images/architecture.png"
+          alt="architecture"
+        />
+      </div>
+    </section>
 
-  <footer>
-    ⓒ 2025 Capstone Team 07 | All rights reserved.
-  </footer>
-</body>
+    <section
+      class="team-section"
+      id="team"
+      style="background-color: var(--sixth-color)"
+    >
+      <h1>Team</h1>
+      <div class="team-container">
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="images/logo.png" />
+          </div>
+          <div class="team-content">
+            <h3 class="name">김설</h3>
+            <h4 class="title">Leader/<br />Frontend Developer</h4>
+          </div>
+        </div>
+
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="images/logo.png" />
+          </div>
+          <div class="team-content">
+            <h3 class="name">고다연</h3>
+            <h4 class="title">Backend Developer</h4>
+          </div>
+        </div>
+
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="images/logo.png" />
+          </div>
+          <div class="team-content">
+            <h3 class="name">안세준</h3>
+            <h4 class="title">Backend Developer</h4>
+          </div>
+        </div>
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="images/logo.png" />
+          </div>
+          <div class="team-content">
+            <h3 class="name">오성우</h3>
+            <h4 class="title">AI</h4>
+          </div>
+        </div>
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="images/logo.png" />
+          </div>
+          <div class="team-content">
+            <h3 class="name">정성엽</h3>
+            <h4 class="title">Frontend Developer</h4>
+          </div>
+        </div>
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="images/logo.png" />
+          </div>
+          <div class="team-content">
+            <h3 class="name">이지수</h3>
+            <h4 class="title">Frontend Developer</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="presentation" id="presentation">
+      <h1>Presentation</h1>
+      <div style="text-align: center; height: 65.5vh">
+        <object
+          type="application/pdf"
+          data="presentation.pdf"
+          width="64%"
+          height="100%"
+        >
+          <p>
+            현재 브라우저가 PDF 삽입을 지원하지 않습니다.
+            <a
+              href=""
+              >직접 다운로드 하기</a
+            >
+          </p>
+        </object>
+      </div>
+    </section>
+    <section class="poster-section" id="poster">
+      <h1>Poster</h1>
+      <img class="poster" src="images/poster.png" alt="포스터 이미지" />
+    </section>
+    <section class="demo" id="demo">
+      <h1>Video</h1>
+			<div style="text-align: center; height: 65.5vh">
+				<iframe width="100%" height="100%" src="#" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+    </section>
+  </body>
+  <script>
+    window.onscroll = function () {
+      if (window.scrollY > 50) {
+        document.querySelector(".nav").classList.add("visible");
+      } else {
+        document.querySelector(".nav").classList.remove("visible");
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            } else {
+              entry.target.classList.remove("visible");
+            }
+          });
+        },
+        {
+          threshold: 0.5,
+        }
+      );
+
+      document.querySelectorAll(".about").forEach((section) => {
+        observer.observe(section);
+      });
+    });
+  </script>
 </html>
